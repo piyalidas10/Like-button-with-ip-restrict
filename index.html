@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="likeApp">
+<head>
+<meta charset="utf-8">
+<title>Facebook like dislike button with IP restrict using Angularjs</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+<style>
+	body{text-align: center; margin: 50px auto; background: #4567AC;}
+	.box{background: #FFF; padding-top: 30px; padding-bottom: 30px;border-radius: 5px;}
+	.box h3{text-transform: uppercase; font-weight:bold ; margin-bottom: 30px;color:#4567AC;}
+	.btn{font-size: 18px;}
+	.box h4{ margin-top: 20px;}
+	.btn-primary,.btn-primary:hover,.btn-primary:focus { background-color: #4567AC;border-color: #0a4374;}
+
+</style>
+</head>
+
+<body ng-controller="mainCtrl">
+
+
+	<div class="container">
+		<div class="box col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 xol-xs-12">
+			<h3>Facebook Like</h3>
+			<button class="btn {{btnclass}}" ng-click="getlike()" ng-init="likes=0;"><i class="fa fa-thumbs-o-up"></i> Like</button>
+
+			<h4>Like : <span>{{likes}}</span></h4>
+		</div>
+	</div>
+	
+
+</body>
+<script src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js'></script>
+<script src='app.js'></script>
+</html>
